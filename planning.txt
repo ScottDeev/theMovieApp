@@ -1,0 +1,23 @@
+*****************************A moive app********************
+What it should do
+1. Use an api to display popular movies on search
+2.Show have a side bar where all moives related to the search stays
+3. On click of a particular movie, it show appear with full details on the screen.
+4.User should be able to add movie to watch later and also remove 
+
+
+TASKS 
+1. Draw a UI for the project on a sketch (DONE) and transfer it in code to Vcscode(setting basic Js along)
+2.Fetch data from the movie api and get attributes to be displayed
+3.Javascript code for displaying the searched movies on the side bar 
+4. Javascript code for making a particular movie appear on the full screen
+5. Javascript code for marking a particular movie as watch later 
+
+
+Sub task --- TASK 1
+Getting neccessary icons to be used for the UI
+a. watch later icon
+b. search icon
+c. toggle menu icon
+
+Picking the right color for the project(black background, whitesmoke text, blue button)

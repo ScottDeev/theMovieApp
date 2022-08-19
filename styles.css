@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  position: relative;
+}
+.header {
+  padding: 20px 10px;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  color: whitesmoke;
+}
+.nav-humburger img,
+.close-menu img {
+  height: 30px;
+}
+
+
+
+.movie-display.show-menu {
+  transform: translateX(0);
+}
+/* .watch-later-mo.show-menu{
+  transform: translateY(0);
+}
+.watch-later-mo{
+  position: absolute;
+  top: 70px;
+  right: 0;
+  z-index: 100;
+  width: 30%;
+  transform: translateY(-200%);
+  background-color: black;
+} */
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+.movie-display {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  width: 60%;
+  background-color: black;
+  color: whitesmoke;
+  z-index: 100;
+  overflow-y: auto;
+}
+.close-menu{
+  width: 100%;
+  padding: 20px;
+
+}
+.close-menu img{
+  float: right;
+}
+.wrapper form{
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.wrapper form input{
+  height: 40px;
+  width: 60%;
+  border-radius: 8px;
+}
+.pagination{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+.pagination button{
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: aqua;
+}
+.search{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.individual-wrapper{
+  width: 60%;
+  margin: 30px auto;
+}
+.individual-mo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.individual-mo:hover{
+  background-color: rgb(90, 89, 89);
+  cursor: pointer;
+  margin-left: 5px;
+}
+.movie-img{
+  height: 50px;
+  width: 50px;
+}
+.details-mo{
+  width: 70%;
+}
+.movie-img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.before-load-text{
+  text-align: center;
+  color: whitesmoke;
+}
+.picture-div {
+  width: 80%;
+  margin: 20px auto;
+}
+.movie-picture {
+  position: relative;
+  width: 100%;
+}
+.movie-picture img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: -10px 10px 20px 10px rgba(250, 247, 247, 0.35);
+}
+.movie-picture div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+}
+.movie-picture div a {
+  text-decoration: none;
+  font-size: 80%;
+  color: black;
+  padding: 20px 30px;
+  background-color: aqua;
+  border-radius: 18px;
+}
+.movie-details {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+  padding-left: 2%;
+}
+.details-header h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.details-header p{
+  font-style: italic;
+  text-align: center;
+}
+.storylinecast {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  width: 100%;
+}
+.storyline {
+  padding: 10px 10px;
+  width: 60%;
+}
+.storyline h4 {
+  margin-bottom: 40px;
+}
+.storyline p {
+  font-style: italic;
+  line-height: 30px;
+  /* text-align: center; */
+}
+.special-details{
+  width: 40%;
+  color: whitesmoke;
+  margin-left: 20px;
+  padding: 40px 50px;
+  box-shadow: -1px 1px 10px 2px rgba(145, 144, 144, 0.35);
+
+}
+.special-details a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.special-details a:hover{
+  color: aquamarine;
+}
+.special-details h4{
+  margin-bottom: 40px;
+}
+.special-details p{
+  margin-bottom: 15px;
+}
+footer{
+  padding: 20px 20%;
+  width: 100%;
+}
+footer p{
+  text-align: center;
+  color: whitesmoke;
+}
+footer p a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie-display{
+    width: 90%;
+  }
+  .individual-wrapper,
+  .wrapper form input{
+    width: 90%;
+  }
+  .movie-details {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+  .storylinecast {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-right: 0;
+    width: 100%;
+  }
+  .storyline {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .special-details{
+    width: 80%;
+    margin: 20px auto;
+  }
+}
